@@ -22,7 +22,6 @@ In the end, we will be able to produce a construction with "clean ancillas". Tha
 
 $$|x \rangle_{1} | y \rangle_{n} \mapsto 
  \begin{cases}  | x \rangle_{1}  \otimes | 0 \rangle_{1} \otimes | 0 \rangle_{1} \otimes  | (a y) \text{ mod } N \rangle_{n} \otimes | 0 \rangle_{n} \text{, if } x = 1 \text{ and } y < N \\ 
-
 | x \rangle_{1}  \otimes | 0 \rangle_{1} \otimes | 0 \rangle_{1} \otimes  | y \rangle_{n} \otimes | 0 \rangle_{n}  \text{, otherwise }
 \end{cases}$$
 
