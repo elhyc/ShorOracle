@@ -7,7 +7,7 @@ $$U | x \rangle_{1} | y \rangle_{n}  = \begin{cases}  | x \rangle_{1} | (a y) \t
 |x \rangle_{1} |  y \rangle_{n} \text{, otherwise }
 \end{cases}$$
 
-We note that this oracle should not have any effect if $y \geq  N$. With this extra condition, we will need to use an extra ancilla qubit in our construction to help keep track of the combination of the two conditions $x = 1$ <b> and </b> $ y < N$. That is, if both $x = 1$ and $y < N$ are true, then this extra ancilla will be in the $ | 1 \rangle$ state. Otherwise, the exta ancilla qubit will remain $| 0 \rangle$.
+We note that this oracle should not have any effect if $y \geq  N$. With this extra condition, we will need to use an extra ancilla qubit in our construction to help keep track of the combination of the two conditions $x = 1$ <b> and </b> $y < N$. That is, if both $x = 1$ and $y < N$ are true, then this extra ancilla will be in the $| 1 \rangle$ state. Otherwise, the exta ancilla qubit will remain $| 0 \rangle$.
 
 
 If we pass in a state $| x \rangle_{1} | y \rangle_{n}$, such that $x = 1$ and $y < N$, then the output of our quantum circuit before cleaning ancillas, will be of the following form:
