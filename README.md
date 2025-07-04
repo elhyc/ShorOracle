@@ -3,10 +3,8 @@ This repository contains a qiskit implementation of the oracle required for the 
 
 Given two inputs, $a,N \in \mathbb{Z}_{+}$, such that $a < N$, we construct a quantum circuit which implements the oracle:
 
-$$U | x \rangle_{1} | y \rangle_{n}  = \begin{cases}  | x \rangle_{1} | (a y) \text{ mod } N \rangle_{n} \text{, if } x = 1 \text{ and } y < N \\ 
-
+$$U | x \rangle_{1} | y \rangle_{n}  = \begin{cases}  | x \rangle_{1} | (a y) \text{ mod } N \rangle_{n} \text{, if } x = 1 \text{ and } y < N \\
 |x \rangle_{1} |  y \rangle_{n} \text{, otherwise }
-
 \end{cases}$$
 
 We note that this oracle should not have any effect if $y \geq  N$. With this extra condition, we will need to use an extra ancilla qubit in our construction to help keep track of the combination of the two conditions $x = 1$ <b> and </b> $ y < N$. That is, if both $x = 1$ and $y < N$ are true, then this extra ancilla will be in the $ | 1 \rangle$ state. Otherwise, the exta ancilla qubit will remain $| 0 \rangle$.
